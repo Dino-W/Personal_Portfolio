@@ -126,7 +126,7 @@
               主要是針對NodeJS使用語言Javascript以及資料庫語言SQL與NoSQL為之後專精方向!
             </p>
             <a
-              href="https://pda.104.com.tw/profile/share/jIHFKI9T9ukAKZJOLCfdxR9JgnPPPnjz"
+              href="https://pda.104.com.tw/profile/share/jI1enopeCDQYZQzTnYpthLTftuWZjtO3"
               target="_blank"
               >Hire Me!</a
             >
@@ -209,28 +209,52 @@
           </div>
           <div class="column right">
             <div class="text">傳訊給我</div>
-            <form action="#">
+            <form action="/post" id="message" method="POST">
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="姓名" required />
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="姓名"
+                    required
+                  />
                 </div>
                 <div class="field email">
-                  <input type="text" placeholder="Email" required />
+                  <label for="email"></label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
               </div>
               <div class="field">
-                <input type="text" placeholder="主旨" required />
+                <label for="subject"></label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="主旨"
+                  required
+                />
               </div>
               <div class="field textarea">
+                <label for="word"></label>
                 <textarea
                   cols="30"
                   row="10"
+                  id="word"
+                  name="word"
                   placeholder="想說的話"
                   required
                 ></textarea>
               </div>
               <div class="button">
-                <button type="submit">送出!</button>
+                <button type="button" onclick="xxx();">送出!</button>
               </div>
             </form>
           </div>

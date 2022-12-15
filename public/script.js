@@ -28,3 +28,17 @@ const typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true,
 });
+
+function xxx() {
+  $.ajax({
+    url: "post",
+    type: "post",
+    data: $("#message").serialize(),
+    error: function (xhr, ajaxOption, throwError) {
+      alert("Ajax request 發生錯誤");
+    },
+    success: function (msg) {
+      alert(msg);
+    },
+  });
+}
